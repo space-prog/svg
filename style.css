@@ -48,6 +48,11 @@ svg {
     transition: all 5s ease;
 }
 
+.star {
+    animation: star 5s infinite alternate-reverse;
+    transition: all 5s linear;
+}
+
 @keyframes tree1{
     0% {
         fill: #46a655;
@@ -106,7 +111,7 @@ rect {
         background-color: #fff;
     }
     100% {
-        background-color: #ccc;
+        background-color: darkblue;
     }
 }
 
@@ -115,6 +120,15 @@ rect {
         fill: #fff;
     }
     100% {
-        fill: #ccc;
+        fill: darkblue;
+    }
+}
+
+@keyframes star {
+    0% {
+        fill: #fff;
+    }
+    100% {
+        fill: #f5dd53;
     }
 }
