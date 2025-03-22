@@ -1,11 +1,18 @@
 svg {
     border: 2px dashed #ccc;
+    animation: svg 5s infinite alternate-reverse;
+    transition: all 5s linear;
 }
-.moon {
+/* .moon {
     display: none;
     animation-delay: 5s;
     animation: moon 5s infinite alternate;
     transition: all 5s ease;
+} */
+
+#moon {
+    animation: moon 5s infinite alternate-reverse;
+    transition: all 5s linear;
 }
 
 #sun {
@@ -23,8 +30,8 @@ svg {
     }
 
     100% {
-        transform: translateX(120%) translateY(2px);
-        fill: #2c2e3b;
+        transform: translateX(100%) translateY(2px);
+        fill: #fff;
     }
 }
 
@@ -91,5 +98,23 @@ rect {
     }
     100% {
         fill: #447627;
+    }
+}
+
+@keyframes svg {
+    0% {
+        background-color: #fff;
+    }
+    100% {
+        background-color: #ccc;
+    }
+}
+
+@keyframes moon {
+    0% {
+        fill: #fff;
+    }
+    100% {
+        fill: #ccc;
     }
 }
